@@ -1,0 +1,23 @@
+Cores a serem utilizadas:
+
+    -  #0361cd(Azul forte - cores degrade da logo da teixeira)
+    -  #75cafe(Azul claro - cores degrade da logo da teixeira)
+    -  #FFFFFF(Branco)
+    -  #E3E6EB(Cinza claro - fundo do plano de fundo da teixeira)
+    -  #b3b6bb(Cinza escuro - linha do plano de fundo da teixeira)
+
+Ferramentas a serem utilizadas
+
+    como IDE:
+
+        - VS CODE
+    
+    como linguagens de marcação, stilo e programação
+    
+        - HTML
+        - CSS
+        - JS
+
+    para fazer conexão com o banco
+
+        - NodeJs
