@@ -19,8 +19,6 @@ html{
     height: 100vh;
     font-size: 62.5%;
     overflow-x: hidden;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Menu dropdown */
@@ -89,8 +87,8 @@ html{
 }
 
 .logo{
-    width: 220px;
-    height: auto;
+    width: 215px;
+    height: 55px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -150,7 +148,7 @@ html{
 
 .first_section{
     width: 100vw;
-    background-image: linear-gradient(rgba(29,29,29,0.0), rgba(29,29,29,0.0)) ,url(../img/fundo_teixeira.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255, 0.5)) ,url(../img/fundo_teixeira.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -176,6 +174,7 @@ html{
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
+
 
 .first_section h2{
     color: #0361cd;
@@ -215,7 +214,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 5px solid #75cafe;
+    background-color: #fafafa;
 }
 
 .sobre_nos img{
@@ -229,10 +228,7 @@ html{
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0,.500);
-    border-radius: 10px;
     width: 90%;
-    background-color: #b3b6bb;
     padding: 5rem;
 }
 
@@ -241,15 +237,17 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 .contentsobre h2{
-    font-size: 6rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
     color: #0361cd;
+    text-align: center;
 }
 
 .contentsobre p{
+    margin-top: 3rem;
     text-align: center;
     font-size: 2rem;
     width: 600px;
