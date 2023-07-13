@@ -1,24 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;700&family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    outline: none;
     border: none;
     text-decoration: none;
-    font-family: 'Noto Sans', sans-serif;
-
-    font-family: 'Roboto', sans-serif;
-
-
 }
 
 html{
     width: 100vw;
     height: 100vh;
     font-size: 62.5%;
+    font-family: 'Titillium Web', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* Menu dropdown */
@@ -84,10 +82,11 @@ html{
     align-items: center;
     background-color: #b3b6bb;
     position: fixed;
+    
 }
 
 .logo{
-    width: 215px;
+    width: auto;
     height: 55px;
     cursor: pointer;
     display: flex;
@@ -106,7 +105,8 @@ html{
 }
 
 .content .list_menu{
-    width: 600px;
+    margin-left: 50rem;
+    width: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -217,11 +217,17 @@ html{
     background-color: #fafafa;
 }
 
-.sobre_nos img{
+.sobre_nos .img_bag{
     width: 300px;
     height: 300px;
     margin-top: 10rem;
     margin-left: 10rem;
+
+}
+
+.img_bag{
+    padding-top: 5rem;
+    padding-right: 12rem;
 }
 
 .main{
@@ -231,6 +237,16 @@ html{
     width: 90%;
     padding: 5rem;
 }
+
+.main_teixeirinha{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+
 
 .contentsobre{
     display: flex;
@@ -244,6 +260,28 @@ html{
     font-size: 3rem;
     color: #0361cd;
     text-align: center;
+
+}
+
+.contentsobre .h2_sobrenos{
+    font-size: 3rem;
+    color: #0361cd;
+    text-align: center;
+    padding-left: 12rem;
+}
+
+.contentsobre .p_sobrenos{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    width: 600px;
+    padding-left: 12rem;
+
+}
+
+.videoinicio{
+    width: 600px;
+    height: 330px;
 }
 
 .contentsobre p{
@@ -251,6 +289,7 @@ html{
     text-align: center;
     font-size: 2rem;
     width: 600px;
+
 }
 
 /* ISO 9001 */
@@ -279,4 +318,397 @@ html{
 
 .contatos{
     width: 100%;
+    background-image: linear-gradient(45deg, #0361cd, #75cafe);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #ffffff;
+    padding-bottom: 6rem;
+}
+
+.contatos h3{
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+.contatos_secao{
+    width: 120rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+
+}
+
+.contatos_secao i{
+    padding-right: 1rem;
+}
+
+.contatos_secao div{
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.contatos_secao div a{
+    color: #ffffff;
+}
+
+.contatos_secao div a:hover{
+    color: #75cafe;
+}
+
+footer{
+    height: 25px;
+    background-color: #0361cd;
+    color: #ffffff;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner_teixeirinha .contentsobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner_teixeirinha .main{
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner_teixeirinha{
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsividade */
+
+@media (max-width: 1200px) {
+    .main {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content .list_menu{
+        margin-left: 35rem;
+    }
+
+    .main_teixeirinha{
+        display: block;
+    }
+
+    .videoinicio{
+        margin-top: 2rem;
+        width: 100%;
+        height: 400px;
+    }
+    .sobre_nos img {
+        width: 600px;
+        margin-left: -2px;
+    }
+
+    .contatos_secao{
+        width: 120rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    
+}
+
+
+@media (max-width: 866px) {
+    .content {
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    .content .list_menu{
+        display: none;
+        
+    }
+
+    .one,
+    .two,
+    .three {
+        
+        width: 80%;
+        height: 2px;
+        background-color: white;
+        margin: 6px auto;
+
+        transition-duration: 0.5s ;
+    }
+
+    .menu_toggle {
+        width: 40px;
+        height: 30px;
+        
+
+    }
+
+    .content.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1f1e1f;
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        opacity: 0.8;
+    }
+
+    .content.on .logo {
+        display: none;
+    }
+
+    .content.on .menu_toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .content.on .list_menu {
+        margin-right: 30rem;
+        
+    }
+
+    .content.on .list_menu li {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .content.on .dropdown{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content.on .list_menu li a {
+        font-size: 4rem;
+        display: block;
+    }
+
+
+    .content.on .menu_toggle .one {
+        transform: rotate(45deg) translate(8px, -7px);
+    }
+    .content.on .menu_toggle .two {
+        opacity: 0;
+    }
+
+    .content.on .menu_toggle .three {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+    .contatos_secao {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        
+    }
+
+    .contatos_secao div {
+        margin: 2rem;
+        
+    }
+
+}
+
+@media (max-width: 768px) {
+    html{
+        font-size: 45%;
+    }
+
+    .logo{
+        width: auto;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    .content .list_menu{
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three{
+        width: 80%;
+        height: 2px;
+        background-color: #ffffff;
+        margin-top: 6px auto;
+        transition: 0.5s;
+    }
+
+    .menu_toggle {
+        width: 40px;
+        height: 30px;
+        
+
+    }
+
+    .content.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1f1e1f;
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content.on .logo {
+        display: none;
+    }
+
+    .content.on .menu_toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .content.on .list_menu {
+        display: block;
+        
+    }
+
+    .content.on .list_menu li {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .content.on .list_menu li a {
+        font-size: 4rem;
+        display: block;
+    }
+
+
+    .content.on .menu_toggle .one {
+        transform: rotate(45deg) translate(8px, -7px);
+    }
+    .content.on .menu_toggle .two {
+        opacity: 0;
+    }
+
+    .content.on .menu_toggle .three {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+}
+
+@media (max-width: 730px) {
+    .conteudo_principal h1 {
+        width: 350px;
+        text-align: center;
+    }
+
+    .videoinicio{
+        height: 330px;
+    }
+}
+
+@media (max-width: 665px) {
+    .sobre_nos img {
+        width: 400px;
+        margin-left: 10px;
+    }
+
+    .contentsobre p {
+        text-align: center;
+        width: 400px;
+     }
+
+     .videoinicio{
+        height: 280px;
+    }
+
+     .btn {
+        width: auto;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .contatos_secao {
+       width: 200px;
+        
+    }
+    .conteudo_principal h2 {
+        width: 200px;
+        text-align: center;
+    }
+
+    .btn {
+        width: 150px;
+    }
+}
+
+@media (max-width: 399px) {
+
+    .conteudo_principal h1 {
+       font-size: 3rem;
+    }
+    .conteudo_principal h2 {
+       font-size: 2rem;
+    }
+
+    .btn {
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre_nos img {
+        width: 300px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .contentsobre p {
+        text-align: center;
+        width: 200px;
+     }
+     
+     .videoinicio{
+        height: 200px;
+    }
+    
+    @media (max-width: 365px) {
+    
+        .btn {
+            width: auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+        
 }
