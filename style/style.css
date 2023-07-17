@@ -15,6 +15,7 @@ html{
     height: 100vh;
     font-size: 62.5%;
     font-family: 'Titillium Web', sans-serif;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -125,8 +126,6 @@ html{
     /*background-color: #E3E6EB;*/
     border-bottom: 4px solid #0361cd; 
     color: #0361cd;
-
-
 }
 
 .ttx{
@@ -222,7 +221,6 @@ html{
     height: 300px;
     margin-top: 10rem;
     margin-left: 10rem;
-
 }
 
 .img_bag{
@@ -532,14 +530,13 @@ footer{
 }
 
 @media (max-width: 768px) {
+    
     html{
         font-size: 45%;
     }
-
     .logo{
         width: auto;
     }
-
     .content{
         display: flex;
         flex-direction: row;
