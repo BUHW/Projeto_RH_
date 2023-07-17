@@ -56,7 +56,8 @@ html{
     text-decoration: none;
     display: block;
   }
-  
+ 
+
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {
     background-color: #ddd;
@@ -293,13 +294,19 @@ html{
 /* ISO 9001 */
 
 .contentsobre h3{
-    font-size: 2rem;
-    margin-top: 1rem;
+    font-size: 2.2rem;
+    margin-top: 4rem;
     color: #0361cd;
 }
 
 .contentsobre .p_iso{
-    text-align: center;
+    text-align: justify;
+    font-size: 2rem;
+    width: 80%;
+}
+
+.contentsobre .p_sn{
+    text-align: justify;
     font-size: 2rem;
     width: 80%;
 }
@@ -307,7 +314,7 @@ html{
 /* ttx */
 
 .contentsobre .p_ttx{
-    text-align: center;
+    text-align: justify;
     font-size: 2rem;
     width: 80%;
 }
@@ -367,11 +374,15 @@ footer{
     justify-content: center;
 }
 
-.conteiner_teixeirinha .contentsobre{
+.conteiner_teixeirinha{
+    background-color: #ffffff;
+    width: 100%;
+    padding-bottom: 2rem;
+    color: black;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #fafafa;
 }
 
 .conteiner_teixeirinha .main{
@@ -379,12 +390,15 @@ footer{
     justify-content: center;
 }
 
-.conteiner_teixeirinha{
-    align-items: center;
-    justify-content: center;
-}
-
 /* Responsividade */
+
+@media (max-width: 1225px) {
+    
+    .conteudo_principal h1 {
+        width: 1000px;
+        text-align: center;
+    }
+}
 
 @media (max-width: 1200px) {
     .main {
@@ -405,6 +419,7 @@ footer{
         margin-top: 2rem;
         width: 100%;
         height: 400px;
+        margin-top: 2rem;
     }
     .sobre_nos img {
         width: 600px;
@@ -422,8 +437,66 @@ footer{
     
 }
 
+@media (max-width: 1080px) {
+    .main {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content .list_menu{
+        margin-left: 28rem;
+    }
+
+    .main_teixeirinha{
+        display: block;
+    }
+
+    .videoinicio{
+        margin-top: 2rem;
+        width: 100%;
+        height: 400px;
+    }
+    
+}
+
+@media (max-width: 1030px) {
+    .main {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content .list_menu{
+        width: 40rem;
+        
+    }
+
+    .conteudo_principal h1 {
+        width: 800px;
+        text-align: center;
+    }
+
+    .logo{
+        width: auto;
+    }
+
+    .main_teixeirinha{
+        display: block;
+    }
+
+}
+
+
 
 @media (max-width: 866px) {
+
+    .conteudo_principal h1 {
+        width: 700px;
+        text-align: center;
+    }
+
+
     .content {
         justify-content: space-between;
         padding: 0px 40px;
@@ -622,7 +695,7 @@ footer{
 
 @media (max-width: 730px) {
     .conteudo_principal h1 {
-        width: 350px;
+        width: 600px;
         text-align: center;
     }
 
@@ -633,7 +706,7 @@ footer{
 
 @media (max-width: 665px) {
     .sobre_nos img {
-        width: 400px;
+        width: 600px;
         margin-left: 10px;
     }
 
@@ -661,16 +734,29 @@ footer{
         width: 200px;
         text-align: center;
     }
+}
 
-    .btn {
-        width: 150px;
+@media (max-width: 520px) {
+    
+    .conteudo_principal h1 {
+        width: 400px;
+        text-align: center;
     }
+
+     .btn {
+        width: auto;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
 }
 
 @media (max-width: 399px) {
 
     .conteudo_principal h1 {
-       font-size: 3rem;
+       font-size: 4rem;
+        width: 300px;
+        text-align: center;
     }
     .conteudo_principal h2 {
        font-size: 2rem;
