@@ -749,6 +749,22 @@ footer{
          justify-content: center;
          align-items: center;
      }
+
+     .contentsobre .p_sn {
+        text-align: justify;
+        width: 360px;
+     }
+
+
+     .contentsobre .p_iso {
+        text-align: justify;
+        width: 360px;
+     }
+
+     .contentsobre .p_ttx {
+        text-align: justify;
+        width: 360px;
+     }
 }
 
 @media (max-width: 399px) {
@@ -775,9 +791,19 @@ footer{
         margin-left: 10px;
     }
 
-    .contentsobre p {
-        text-align: center;
-        width: 200px;
+    .contentsobre .p_iso {
+        text-align: justify;
+        width: 300px;
+     }
+
+     .contentsobre .p_sn {
+        text-align: justify;
+        width: 300px;
+     }
+
+     .contentsobre .p_ttx {
+        text-align: justify;
+        width: 300px;
      }
      
      .videoinicio{
