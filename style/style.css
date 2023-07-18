@@ -539,7 +539,7 @@ footer{
         justify-content: center;
         align-items: center;
 
-        opacity: 0.8;
+        opacity: 0.95;
     }
 
     .content.on .logo {
@@ -598,6 +598,88 @@ footer{
     .contatos_secao div {
         margin: 2rem;
         
+    }
+
+    /* teste */
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    .content .list_menu{
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three{
+        width: 80%;
+        height: 2px;
+        background-color: #ffffff;
+        margin-top: 6px auto;
+        transition: 0.5s;
+    }
+
+    .menu_toggle {
+        width: 40px;
+        height: 30px;
+        
+
+    }
+
+    .content.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1f1e1f;
+        z-index: 10;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .content.on .logo {
+        display: none;
+    }
+
+    .content.on .menu_toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .content.on .list_menu {
+        display: block;
+        
+    }
+
+    .content.on .list_menu li {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .content.on .list_menu li a {
+        font-size: 4rem;
+        display: block;
+    }
+
+
+    .content.on .menu_toggle .one {
+        transform: rotate(45deg) translate(8px, -7px);
+    }
+    .content.on .menu_toggle .two {
+        opacity: 0;
+    }
+
+    .content.on .menu_toggle .three {
+        transform: rotate(-45deg) translate(20px, -6px);
     }
 
 }
