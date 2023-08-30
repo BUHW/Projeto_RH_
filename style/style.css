@@ -22,57 +22,129 @@ html{
 
 /* Menu dropdown */
 
- /* Dropdown Button */
- .dropbtn {
-    background-color: #b3b6bb;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    transition: all 200ms ease-in;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    font-size: 1.3rem;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
- 
+:root {
+    --button-background: #0361cd;
+    --button-color: white;
 
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
+    --dropdown-highlight: #f1f1f1;
+    --dropdown-width: 120px;
+    --dropdown-background: white;
+    --dropdown-color: black;
 }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+
+/* Boring button styles */
+a.button {
+    /* Frame */
+    width: auto;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.2rem;
+
+    /* Style */
+    border: none;
+    background: var(--button-background);
+    color: var(--button-color);
+    cursor: pointer;
+
+}
+
+a.button:active {
+    filter: brightness(75%);
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    padding: 0px;
+    border: none;
+}
+
+.dropdown summary {
+    list-style: none;
+    list-style-type: none;
+}
+
+.dropdown>summary::-webkit-details-marker {
+    display: none;
+}
+
+.dropdown summary:focus {
+    outline: none;
+}
+
+
+.dropdown ul {
+    position: absolute;
+    margin: 20px 0 0 0;
+    width: var(--dropdown-width);
+    left: 50%;
+    margin-left: calc((var(--dropdown-width) / 2) * -1);
+    box-sizing: border-box;
+    z-index: 2;
+    
+
+    background: var(--dropdown-background);
+    border-radius: 6px;
+    list-style: none;
+}
+
+.dropdown ul li {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown ul li a:link,
+.dropdown ul li a:visited {
+    display: inline-block;
+    padding: 10px 0.8rem;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--dropdown-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.1s;
+}
+
+.dropdown ul li a:hover {
+    background-color: var(--dropdown-highlight);
+}
+
+/* Dropdown triangle */
+.dropdown ul::before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent var(--dropdown-background) transparent;
+
+}
+
+
+/* Close the dropdown with outside clicks */
+.dropdown>summary::before {
+    display: none;
+}
+
+.dropdown[open]>summary::before {
+    content: ' ';
     display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
 }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-    border-bottom: 4px solid #0361cd; 
-    color: #0361cd;
-} 
 
 /* Menu */
 
@@ -398,6 +470,7 @@ footer{
         width: 1000px;
         text-align: center;
     }
+
 }
 
 @media (max-width: 1200px) {
@@ -576,6 +649,9 @@ footer{
         display: block;
     }
 
+    .content.on .list_menu .dropdown li a {
+        font-size: 1.4rem;
+    }
 
     .content.on .menu_toggle .one {
         transform: rotate(45deg) translate(8px, -7px);
@@ -669,7 +745,6 @@ footer{
         font-size: 4rem;
         display: block;
     }
-
 
     .content.on .menu_toggle .one {
         transform: rotate(45deg) translate(8px, -7px);
