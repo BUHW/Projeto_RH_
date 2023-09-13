@@ -1,62 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RH</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="informativo/style/style.css">
     <link rel="shortcut icon" href="img/favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="informativo/script/script.js"></script>
 </head>
+
 <body>
     <header class="content">
         <div class="logo">
-            <img src="img/logo_teixeira_sem_fundo.png" alt="">
+            <img src="../img/logo_teixeira_sem_fundo.png" alt="">
             <h3><a href="#" class="ttx">Teixeira Têxtil</a></h3>
         </div>
         <nav>
             <ul class="list_menu">
-                <details class="dropdown">
-                    <summary role="button">
-                        <a class="button">DEPARTAMENTOS <i class="bi bi-caret-down-fill"></i></a>
-                    </summary>
-                    <ul>
-                        <li>
-                            <a href="#conini">Diretoria</a>
-                        </li>
-                        
-                        <li>
-                            <a href="#qualid">Qualidade</a>
-                        </li>
-                        
-                        <li>
-                            <a href="#sisqua">SGQ</a>
-                        </li>
-
-                        <li>
-                            <a href="#rh">Recursos Humanos</a>
-                        </li>
-
-                        <li>
-                            <a href="#segtra">Segurança do Trabalho</a>
-                        </li>
-
-                        <li>
-                            <a href="#beneficios">Benefícios</a>
-                        </li>
-
-                        <li>
-                            <a href="#canald">Canal de Denúncias</a>
-                        </li>
-
-                        <li>
-                            <a href="#contatos">Contatos</a>
-                        </li>
-                    </ul>
-                </details>   
-                <li><a href="https://www.instagram.com/teixeiraindustria/" target="_blank"><i class="bi bi-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/teixeiraindustria/?locale=pt_BR" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/teixeiratextil?originalSubdomain=br" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/teixeiraindustria/" target="_blank"><i
+                            class="bi bi-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/teixeiraindustria/?locale=pt_BR" target="_blank"><i
+                            class="bi bi-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/teixeiratextil?originalSubdomain=br" target="_blank"><i
+                            class="bi bi-linkedin"></i></a></li>
             </ul>
         </nav>
 
@@ -72,473 +40,675 @@
         <div class="conteudo_principal">
             <h1>ENTRE PARA A FAMILIA TEIXEIRA TÊXTIL</h1>
             <div class="btn">
-                <a href="#"><button class="form">Formulario <i class="bi bi-caret-right-fill"></i></button></a>
+                <a href="https://www.teixeiratextil.com.br/"><button class="form">Conheça nosso portal <i
+                            class="bi bi-caret-right-fill"></i></button></a>
             </div>
         </div>
     </section>
 
-    <section class="sobre_nos" id="ttx">
-        <div class="main">
-            <div class="contentsobre">
-                <h2>Teixeira têxtil</h2>
-                <h2>soluções que embalam resultados</h2>
-                <p class="p_sn">
-                    Há mais de 20 anos a solução mais inteligente e sustentável para o armazenamento e transporte de produtos dos mais diversos segmentos da indústria
-                </p>
-            </div> 
-                <div class="videoi">
-                    <iframe class="videoinicio" src="https://www.youtube.com/embed/2bKXfr5Bpkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                
-         </div>
+    <section class="navegation" id="navegation">
+        <nav>
+            <ul>
+
+                <li>
+                    <button id="btn-diretoria" class="btn-navegation">
+                        <i class="bi bi-award"></i> <span>Diretoria</span>
+                    </button>
+                </li>
+
+
+
+                <li>
+                    <button id="btn-qualidade" class="btn-navegation">
+                        <i class="bi bi-patch-check"></i> <span>Qualidade</span>
+                    </button>
+                </li>
+
+
+
+                <li> 
+                    <button id="btn-sgo" class="btn-navegation">
+                        <i class="bi bi-patch-check-fill"></i> <span>SGQ</span>
+                    </button>
+                </li>
+
+
+
+                <li>
+                    <button id="btn-rh" class="btn-navegation">
+                        <i class="bi bi-people"></i> <span>Recursos humanos</span>
+                    </button>
+                </li>
+
+
+
+                <li>
+                    <button id="btn-segtra" class="btn-navegation">
+                        <i class="bi bi-shield-check"></i> <span>Segurança do
+                            trabalho</span>
+                    </button>
+                </li>
+
+
+
+                <li>
+                    <button id="btn-beneficios" class="btn-navegation">
+                        <i class="bi bi-bag"></i> <span>Beneficios</span>
+                    </button>
+                </li>
+
+
+
+                <li>
+                    <button id="btn-canden" class="btn-navegation">
+                        <i class="bi bi-x-octagon"></i> <span>Canal dedenuncia</span>
+                    </button>
+                </li>
+
+            </ul>
+        </nav>
     </section>
 
-    <section class="sobre_nos" id="conini">
+    <section class="sobre_nos1" id="conini">
         <div class="main">
-            <div class="contentsobre">
+            <div class="contentsobre" id="consdire">
                 <h2>CONSIDERAÇÕES INICIAIS</h2>
-                <p class="p_ttx">A elaboração deste informativo tem o intuito de apresentar de forma clara e objetiva o que a empresa tem a oferecer, os direitos, deveres e obrigações dos colaboradores e o que ela espera do mesmo.
-                    Preocupada com o bem-estar de seus colaboradores a TEIXEIRA TÊXTIL está constantemente desenvolvendo programas nas áreas de Recursos Humanos, Qualidade, Segurança no Trabalho entre outros, visando melhoria contínua, a qual somente será possível com o comprometimento e participação de todos, sugerindo mudanças necessárias para o crescimento da empresa e consequentemente de todos os colaboradores que acreditam no seu desenvolvimento.
-                    Desta maneira contamos com sua dedicação e esperamos atender sua necessidade de obter informações sobre a empresa.
+                <p class="p_ttx">A elaboração deste informativo tem o intuito de apresentar de forma clara e objetiva o
+                    que a empresa tem a oferecer, os direitos, deveres e obrigações dos colaboradores e o que ela espera
+                    do mesmo.
+                    Preocupada com o bem-estar de seus colaboradores a TEIXEIRA TÊXTIL está constantemente desenvolvendo
+                    programas nas áreas de Recursos Humanos, Qualidade, Segurança no Trabalho entre outros, visando
+                    melhoria contínua, a qual somente será possível com o comprometimento e participação de todos,
+                    sugerindo mudanças necessárias para o crescimento da empresa e consequentemente de todos os
+                    colaboradores que acreditam no seu desenvolvimento.
+                    Desta maneira contamos com sua dedicação e esperamos atender sua necessidade de obter informações
+                    sobre a empresa.
                 </p>
-                    <h3>PALAVRA DA DIRETORIA</h3>
-                    <p class="p_ttx">A Teixeira Têxtil é uma empresa que busca constantemente adequar-se aos padrões de exigência do mercado consumidor, seja ele local ou de outras regiões do estado e do país. Optou pela modernização de seus processos de trabalho, objetivando a melhoria constante dos produtos e o atendimento de altíssima qualidade.
-                    Deﬁniu meios que facilitam a qualiﬁcação do quadro proﬁssional entendendo que somente dessa forma possibilitará, também, o crescimento paralelo de seus colaboradores A direção que seguimos exige proﬁssionais dedicados que buscam aprender e crescer
+                <h3>PALAVRA DA DIRETORIA</h3>
+                <p class="p_ttx">A Teixeira Têxtil é uma empresa que busca constantemente adequar-se aos padrões de
+                    exigência do mercado consumidor, seja ele local ou de outras regiões do estado e do país. Optou pela
+                    modernização de seus processos de trabalho, objetivando a melhoria constante dos produtos e o
+                    atendimento de altíssima qualidade.
+                    Deﬁniu meios que facilitam a qualiﬁcação do quadro proﬁssional entendendo que somente dessa forma
+                    possibilitará, também, o crescimento paralelo de seus colaboradores A direção que seguimos exige
+                    proﬁssionais dedicados que buscam aprender e crescer
                     cada vez mais. Necessitamos de pessoas que queiram contribuir sugerindo mudanças
                     que aperfeiçoem ainda mais nossos processos.
-                    A preocupação de todos os colaboradores deve estar na qualidade do atendimento, na qualidade dos serviços que prestamos e na imagem que construímos junto aos nossos clientes. Nossa perpetuação depende da capacidade que temos de oferecer produtos e serviços cada vez melhores aos nossos clientes.
-                    O desaﬁo passa a ser agora também seu. A Teixeira Têxtil conta com sua disposição e conﬁança. O crescimento da empresa propiciará novas oportunidades para aqueles que nela acreditam.
-                    Leia com atenção todas as informações deste informativo de ética, conduta e integração de colaboradores, e conheça um pouco de nossa empresa. Conﬁe no seu sucesso e participe ativamente sempre que for solicitado de todas as iniciativas que a empresa difundir. Esperamos que sua estrada entre nós seja longa, repleta de realizações e que você se sinta feliz com seus novos companheiros.
-                    </p>
-            </div>     
-         </div>
+                    A preocupação de todos os colaboradores deve estar na qualidade do atendimento, na qualidade dos
+                    serviços que prestamos e na imagem que construímos junto aos nossos clientes. Nossa perpetuação
+                    depende da capacidade que temos de oferecer produtos e serviços cada vez melhores aos nossos
+                    clientes.
+                    O desaﬁo passa a ser agora também seu. A Teixeira Têxtil conta com sua disposição e conﬁança. O
+                    crescimento da empresa propiciará novas oportunidades para aqueles que nela acreditam.
+                    Leia com atenção todas as informações deste informativo de ética, conduta e integração de
+                    colaboradores, e conheça um pouco de nossa empresa. Conﬁe no seu sucesso e participe ativamente
+                    sempre que for solicitado de todas as iniciativas que a empresa difundir. Esperamos que sua estrada
+                    entre nós seja longa, repleta de realizações e que você se sinta feliz com seus novos companheiros.
+                </p>
+            </div>
+        </div>
     </section>
 
     <section class="sobre_nos" id="sobrenos">
         <div class="main">
             <div class="contentsobre">
                 <h2>Sobre Nós</h2>
-                <p class="p_iso">A Teixeira Têxtil nasceu em 2001 na cidade de Criciúma, no extremo sul do estado de Santa Catarina. Surgiu a partir do sonho de um jovem focado em ter sua independência pessoal e proﬁssional. Neste início a empresa produzia sacaria de 60kg. Em 2003 a empresa passa a ter sua unidade própria, porém na cidade de Cocal do Sul e inicia-se a produção de big-bag de 2 toneladas. Em 2009 foi um momento marcante para a Teixeira Têxtil foi quando a empresa inicia seus trabalhos no município de Forquilhinha sendo essa a unidade Matriz e neste momento começa a trabalhar a verticalização do negócio, ou seja, produzindo desde o tecido a Big-bag. E é atuando sobre bases sólidas que a Teixeira Têxtil busca contribuir para um futuro melhor nas regiões onde atua.</p>
-  
-            </div>     
-            
-         </div>
+                <p class="p_iso">A Teixeira Têxtil nasceu em 2001 na cidade de Criciúma, no extremo sul do estado de
+                    Santa Catarina. Surgiu a partir do sonho de um jovem focado em ter sua independência pessoal e
+                    proﬁssional. Neste início a empresa produzia sacaria de 60kg. Em 2003 a empresa passa a ter sua
+                    unidade própria, porém na cidade de Cocal do Sul e inicia-se a produção de big-bag de 2 toneladas.
+                    Em 2009 foi um momento marcante para a Teixeira Têxtil foi quando a empresa inicia seus trabalhos no
+                    município de Forquilhinha sendo essa a unidade Matriz e neste momento começa a trabalhar a
+                    verticalização do negócio, ou seja, produzindo desde o tecido a Big-bag. E é atuando sobre bases
+                    sólidas que a Teixeira Têxtil busca contribuir para um futuro melhor nas regiões onde atua.</p>
+
+            </div>
+
+        </div>
     </section>
 
-    <section class="sobre_nos" id="qualid">
+    <section class="sobre_nos1 qualid" id="qualid">
         <div class="main">
             <div class="contentsobre">
                 <h2>ISO 9001</h2>
-                <p class="p_iso">A Teixeira Têxtil obteve a certificação ISO 9001:2015 no ano de 2021 após um ano de projeto, concluindo-se com todos os requisitos normativos.
+                <p class="p_iso">A Teixeira Têxtil obteve a certificação ISO 9001:2015 no ano de 2021 após um ano de
+                    projeto, concluindo-se com todos os requisitos normativos.
 
-                    Certificação que visa a padronização e a melhoraria continua de produtos e processos, também com foco no atendimento aos seus clientes e na capacitação de seus colaboradores.
-                    
-                    “A conquista do selo de certificação é o resultado da constante evolução em nossos processos, sendo também reflexo do crescimento e desenvolvimento da empresa.”
+                    Certificação que visa a padronização e a melhoraria continua de produtos e processos, também com
+                    foco no atendimento aos seus clientes e na capacitação de seus colaboradores.
+
+                    “A conquista do selo de certificação é o resultado da constante evolução em nossos processos, sendo
+                    também reflexo do crescimento e desenvolvimento da empresa.”
                     Estefane Topanotti Teixeira – Presidente da Teixeira Têxtil.
-                    
-                    O Sistema de Gestão da Qualidade (SGQ) da Teixeira Têxtil busca em sua essência a satisfação dos nossos clientes, tendo como base a política da qualidade.</p>
-                    
-                    <h3>Política da Qualidade</h3>
-                    <p class="p_iso">A política da qualidade descreve os objetivos da empresa para garantir o padrão de qualidade dos processos e produtos da Teixeira Têxtil.
-                    
-                        “Atender as necessidades e requisitos de mercado com evolução contínua dos produtos, processos, fornecedores e recursos humanos. Respeitando o ambiente externo, agregando valor ao capital.”</p> 
-                    
-            </div>     
-         </div>
+
+                    O Sistema de Gestão da Qualidade (SGQ) da Teixeira Têxtil busca em sua essência a satisfação dos
+                    nossos clientes, tendo como base a política da qualidade.</p>
+
+                <h3>Política da Qualidade</h3>
+                <p class="p_iso">A política da qualidade descreve os objetivos da empresa para garantir o padrão de
+                    qualidade dos processos e produtos da Teixeira Têxtil.
+
+                    “Atender as necessidades e requisitos de mercado com evolução contínua dos produtos, processos,
+                    fornecedores e recursos humanos. Respeitando o ambiente externo, agregando valor ao capital.”</p>
+
+            </div>
+        </div>
     </section>
 
-    <section class="sobre_nos" id="ttx_vc">
+    <section class="sobre_nos ttx_vc" id="ttx_vc">
         <div class="main">
             <div class="contentsobre">
                 <h2>Teixeira Têxtil e Você</h2>
-                <p class="p_ttx">A Teixeira Têxtil possui uma imagem que está sendo construída no mercado ao longo dos anos, com o trabalho e esforço de todos os colaboradores. Ao ingressar na empresa, você assume o compromisso de realizar o seu trabalho com uma conduta pessoal de forma a manter e, juntos, melhorar ainda mais a imagem da empresa. O respeito com o cliente se faz em todos os momentos do trabalho. O mais importante é termos a preocupação com nossos produtos e serviços de atendimento, e desta forma fazer os processos com qualidade.
-                    Seu ingresso na empresa é muito importante, e desde já, conﬁamos no desempenho e dedicação para com as atividades do trabalho. Para sua tranquilidade no desempenho dos trabalhos é importante sua integração total com os colegas e com a empresa. O relacionamento com os colegas deve ser sempre num clima mútuo de cortesia, educação, atenção e respeito, pois, como passamos grande parte de nossas vidas na empresa é gratiﬁcante sentirmo-nos bem no ambiente de trabalho e na convivência com nossos colegas.
-                    Ter comportamento colaborativo e respeitoso é essencial para que os colegas o considerem da mesma forma. Incentivamos a amizade e o coleguismo no ambiente de trabalho, como pontos importantes para o sucesso da equipe. O mais simples gesto de cumprimento “BOM DIA” ou “BOA TARDE”, ou um “POR FAVOR” e um “MUITO OBRIGADO”, revela boa vontade e aproxima as pessoas.
-                    </p>
-                    
-            </div>     
-         </div>
+                <p class="p_ttx">A Teixeira Têxtil possui uma imagem que está sendo construída no mercado ao longo dos
+                    anos, com o trabalho e esforço de todos os colaboradores. Ao ingressar na empresa, você assume o
+                    compromisso de realizar o seu trabalho com uma conduta pessoal de forma a manter e, juntos, melhorar
+                    ainda mais a imagem da empresa. O respeito com o cliente se faz em todos os momentos do trabalho. O
+                    mais importante é termos a preocupação com nossos produtos e serviços de atendimento, e desta forma
+                    fazer os processos com qualidade.
+                    Seu ingresso na empresa é muito importante, e desde já, conﬁamos no desempenho e dedicação para com
+                    as atividades do trabalho. Para sua tranquilidade no desempenho dos trabalhos é importante sua
+                    integração total com os colegas e com a empresa. O relacionamento com os colegas deve ser sempre num
+                    clima mútuo de cortesia, educação, atenção e respeito, pois, como passamos grande parte de nossas
+                    vidas na empresa é gratiﬁcante sentirmo-nos bem no ambiente de trabalho e na convivência com nossos
+                    colegas.
+                    Ter comportamento colaborativo e respeitoso é essencial para que os colegas o considerem da mesma
+                    forma. Incentivamos a amizade e o coleguismo no ambiente de trabalho, como pontos importantes para o
+                    sucesso da equipe. O mais simples gesto de cumprimento “BOM DIA” ou “BOA TARDE”, ou um “POR FAVOR” e
+                    um “MUITO OBRIGADO”, revela boa vontade e aproxima as pessoas.
+                </p>
+
+            </div>
+        </div>
     </section>
 
-    <section class="sobre_nos" id="ideologia">
+    <section class="sobre_nos1 ideologia" id="ideologia">
         <div class="main">
             <div class="contentsobre">
                 <h2>Ideologia da empresa</h2>
-                
-                    
-                    <h3>Missão:</h3>
-                    <p class="p_ttx">Movimentar o mundo com embalagens de ráfia.</p>
-                    
-                    <h3>Visão:</h3>
-                    <p class="p_ttx">Crescer, sendo a marca mais lembrada como produtores de ráfia estando entre as melhores empresas para se trabalhar até 2027.</p>
-                    
-                    <h3>Valores:</h3>
-                    <p class="p_ttx">Pessoas, transparência, ética, oportunidade, paixão, qualidade e legado.</p>
-                    
-            </div>     
-         </div>
+
+
+                <h3>Missão:</h3>
+                <p class="p_ttx">Movimentar o mundo com embalagens de ráfia.</p>
+
+                <h3>Visão:</h3>
+                <p class="p_ttx">Crescer, sendo a marca mais lembrada como produtores de ráfia estando entre as melhores
+                    empresas para se trabalhar até 2027.</p>
+
+                <h3>Valores:</h3>
+                <p class="p_ttx">Pessoas, transparência, ética, oportunidade, paixão, qualidade e legado.</p>
+
+            </div>
+        </div>
     </section>
 
     <section class="sobre_nos" id="sisqua">
         <div class="main">
             <div class="contentsobre">
-                <h2>Sistema de Gestão da Qualidade</h2>                
-                    <p class="p_ttx">Sistema de qualidade são pessoas, máquinas e processos de trabalho em harmonia, através de padrões preestabelecidos e documentos em forma de normas, buscando o aprimoramento contínuo dos seus elementos (pessoais, máquinas e processos) para atingir a QUALIDADE TOTAL.
-                        Desta forma, mantemos um programa de padronização, onde cada atividade desempenhada pelos colaboradores é descrita em forma de normas e procedimentos. Cada colaborador, em cada setor tem suas funções e atividades descritas nestes procedimentos.
-                        </p>
-                    
-                    <h3>OBJETIVOS DA PADRONIZAÇÃO:</h3>
-                    <p class="p_ttx">
-                        • Uniﬁcar a sistemática de trabalho em equipe;<br>
-                        • Estabelecer limites de aceitação;<br>
-                        • Deﬁnir a capacidade e as características de um processo;<br>
-                        • Promover recursos para treinamento e qualiﬁcação;<br>
-                        • Estabelecer a base para melhoria contínua;<br>
-                        • Reduzir custos, agindo de forma preventiva ao trabalho.<br>
-                        </p>
-                    
-            </div>     
-         </div>
+                <h2>Sistema de Gestão da Qualidade</h2>
+                <p class="p_ttx">Sistema de qualidade são pessoas, máquinas e processos de trabalho em harmonia, através
+                    de padrões preestabelecidos e documentos em forma de normas, buscando o aprimoramento contínuo dos
+                    seus elementos (pessoais, máquinas e processos) para atingir a QUALIDADE TOTAL.
+                    Desta forma, mantemos um programa de padronização, onde cada atividade desempenhada pelos
+                    colaboradores é descrita em forma de normas e procedimentos. Cada colaborador, em cada setor tem
+                    suas funções e atividades descritas nestes procedimentos.
+                </p>
+
+                <h3>OBJETIVOS DA PADRONIZAÇÃO:</h3>
+                <p class="p_ttx">
+                    • Uniﬁcar a sistemática de trabalho em equipe;<br>
+                    • Estabelecer limites de aceitação;<br>
+                    • Deﬁnir a capacidade e as características de um processo;<br>
+                    • Promover recursos para treinamento e qualiﬁcação;<br>
+                    • Estabelecer a base para melhoria contínua;<br>
+                    • Reduzir custos, agindo de forma preventiva ao trabalho.<br>
+                </p>
+
+            </div>
+        </div>
     </section>
 
-    <section class="sobre_nos" id="5s">
+    <section class="sobre_nos1" id="5s">
         <div class="main">
             <div class="contentsobre">
-                <h2>Programa 5 S’s</h2>                
-                    <p class="p_ttx">Os 5S’s são uma das técnicas mais populares de gestão da qualidade no mundo e foi desenvolvido no Japão. Mais do que uma técnica, é uma ﬁlosoﬁa para manter o local de trabalho, a empresa como um todo e até a vida de forma organizada, limpa e eﬁciente.
-                        O Programa 5S é simples e fácil de ser aplicado!
-                        Ele envolve 5 sensos que, se incorporados ao nosso dia-a-dia, promovem a melhoria da nossa Qualidade de Vida!
-                        O programa 5 S’s tem origem em cinco palavras de origem japonesa iniciadas com a letra “S” que signiﬁcam:<br><br>
-                        1o S - SEIRI - Senso de utilização.<br>
-                        • Evitar excesso e desperdício de qualquer natureza;<br>
-                        • Utilizar os recursos de acordo com as necessidades, especiﬁcação e a adequação;<br>
-                        • Manter no local de trabalho somente objetos e dados necessários. <br>
-                        2o S - SEITON - Senso de ordenação.<br>
-                        • Ter um sistema para guardar e localizar rapidamente aquilo que utiliza;<br>
-                        • Ter um layout funcional e prático;<br>
-                        • Utilizar comunicação visual (Placas, Etiquetas, Murais, Avisos etc.)<br>
-                        3o S - SEISO - Senso de limpeza.<br>
-                        • Eliminar todo e qualquer traço de sujeira, agindo na causa fundamental.<br>
-                        4o S - SEIKETSU - Senso de conservação/Saúde/Higiene.<br>
-                        • Manter condições de trabalho físicos e mentais favoráveis a saúde.<br>
-                        5o S - SHITSUKE - Senso de autodisciplina.<br>
-                        • Estar comprometido com os padrões éticos e técnicas estabelecidas em normas.<br>
-                        
-                        </p>
-                    
-                    <h3>BENEFÍCIOS DO PROGRAMA 5 S's</h3>
-                    <p class="p_ttx">
-                        • Promover a participação em todos os níveis da organização;<br>
-                        • Desenvolver equipes e lideranças;<br>
-                        • Incentivar a criatividade;<br>
-                        • Melhorar o ambiente de trabalho;<br>
-                        • Reduzir as faltas e rotatividade de pessoal;<br>
-                        • Aprender a mudar;<br>
-                        • Reduzir desperdícios;<br>
-                        • Preparar o ambiente para a qualidade total: Produtividade, Qualidade, sobrevivência.<br>
+                <h2>Programa 5 S’s</h2>
+                <p class="p_ttx">Os 5S’s são uma das técnicas mais populares de gestão da qualidade no mundo e foi
+                    desenvolvido no Japão. Mais do que uma técnica, é uma ﬁlosoﬁa para manter o local de trabalho, a
+                    empresa como um todo e até a vida de forma organizada, limpa e eﬁciente.
+                    O Programa 5S é simples e fácil de ser aplicado!
+                    Ele envolve 5 sensos que, se incorporados ao nosso dia-a-dia, promovem a melhoria da nossa Qualidade
+                    de Vida!
+                    O programa 5 S’s tem origem em cinco palavras de origem japonesa iniciadas com a letra “S” que
+                    signiﬁcam:<br><br>
+                    1o S - SEIRI - Senso de utilização.<br>
+                    • Evitar excesso e desperdício de qualquer natureza;<br>
+                    • Utilizar os recursos de acordo com as necessidades, especiﬁcação e a adequação;<br>
+                    • Manter no local de trabalho somente objetos e dados necessários. <br>
+                    2o S - SEITON - Senso de ordenação.<br>
+                    • Ter um sistema para guardar e localizar rapidamente aquilo que utiliza;<br>
+                    • Ter um layout funcional e prático;<br>
+                    • Utilizar comunicação visual (Placas, Etiquetas, Murais, Avisos etc.)<br>
+                    3o S - SEISO - Senso de limpeza.<br>
+                    • Eliminar todo e qualquer traço de sujeira, agindo na causa fundamental.<br>
+                    4o S - SEIKETSU - Senso de conservação/Saúde/Higiene.<br>
+                    • Manter condições de trabalho físicos e mentais favoráveis a saúde.<br>
+                    5o S - SHITSUKE - Senso de autodisciplina.<br>
+                    • Estar comprometido com os padrões éticos e técnicas estabelecidas em normas.<br>
 
-                        </p>
-                    
-            </div>     
-         </div>
+                </p>
+
+                <h3>BENEFÍCIOS DO PROGRAMA 5 S's</h3>
+                <p class="p_ttx">
+                    • Promover a participação em todos os níveis da organização;<br>
+                    • Desenvolver equipes e lideranças;<br>
+                    • Incentivar a criatividade;<br>
+                    • Melhorar o ambiente de trabalho;<br>
+                    • Reduzir as faltas e rotatividade de pessoal;<br>
+                    • Aprender a mudar;<br>
+                    • Reduzir desperdícios;<br>
+                    • Preparar o ambiente para a qualidade total: Produtividade, Qualidade, sobrevivência.<br>
+
+                </p>
+
+            </div>
+        </div>
     </section>
 
-    <section class="sobre_nos" id="rh">
+    <section class="sobre_nos rh" id="rh">
         <div class="main">
             <div class="contentsobre">
-                <h2>Contrato de Trabalho</h2>                
-                    <p class="p_ttx">Todos os colaboradores contratados passam por um período de experiência (45 e 90 dias). Nesta fase, o novo colaborador deverá ser auxiliado e orientado no dia-a-dia, por outro colaborador do seu setor, e pelo seu supervisor imediato.
-                        Formalmente, o seu supervisor após efetuar a avaliação de desempenho do período de experiência, remeterá ao setor de Recursos Humanos um relatório contendo informações sobre seu desempenho durante o período e você receberá de seu superior um feedback do seu desempenho.                        
-                        </p>
-                    
-                    <h3>HORÁRIO DE TRABALHO</h3>
-                    <p class="p_ttx">
-                        A empresa adota horários de trabalho diferenciados, conforme suas necessidades operacionais. Você receberá do seu supervisor as informações sobre o seu horário de trabalho. As regras acerca do horário de trabalho e alterações fazem parte do seu contrato de trabalho.
-                        </p>
+                <h2>Contrato de Trabalho</h2>
+                <p class="p_ttx">Todos os colaboradores contratados passam por um período de experiência (45 e 90 dias).
+                    Nesta fase, o novo colaborador deverá ser auxiliado e orientado no dia-a-dia, por outro colaborador
+                    do seu setor, e pelo seu supervisor imediato.
+                    Formalmente, o seu supervisor após efetuar a avaliação de desempenho do período de experiência,
+                    remeterá ao setor de Recursos Humanos um relatório contendo informações sobre seu desempenho durante
+                    o período e você receberá de seu superior um feedback do seu desempenho.
+                </p>
 
-                    <h3>AVALIAÇÃO DE DESEMPENHO (COMPETÊNCIA) ANUAL</h3>
-                    <p class="p_ttx">
-                        Formalmente, o seu supervisor após efetuar a avaliação de competência, remeterá ao setor de Recursos Humanos o relatório contendo informações sobre seu desempenho durante o ano. E você será chamado para receber o feedback da sua avaliação de competência.
-                        </p>
+                <h3>HORÁRIO DE TRABALHO</h3>
+                <p class="p_ttx">
+                    A empresa adota horários de trabalho diferenciados, conforme suas necessidades operacionais. Você
+                    receberá do seu supervisor as informações sobre o seu horário de trabalho. As regras acerca do
+                    horário de trabalho e alterações fazem parte do seu contrato de trabalho.
+                </p>
 
-                    <h3>PESQUISA DE CLIMA ORGANIZACIONAL</h3>
-                    <p class="p_ttx">
-                        Anualmente, a Teixeira Têxtil realiza uma pesquisa de clima em todas as suas unidades. A pesquisa é totalmente anônima, e seu objetivo é dar voz ao colaborador. Para que ele possa expor suas opiniões de forma individual, bem como sugerir melhorias dentro da organização.
-                        </p>        
-            </div>     
-         </div>
+                <h3>AVALIAÇÃO DE DESEMPENHO (COMPETÊNCIA) ANUAL</h3>
+                <p class="p_ttx">
+                    Formalmente, o seu supervisor após efetuar a avaliação de competência, remeterá ao setor de Recursos
+                    Humanos o relatório contendo informações sobre seu desempenho durante o ano. E você será chamado
+                    para receber o feedback da sua avaliação de competência.
+                </p>
+
+                <h3>PESQUISA DE CLIMA ORGANIZACIONAL</h3>
+                <p class="p_ttx">
+                    Anualmente, a Teixeira Têxtil realiza uma pesquisa de clima em todas as suas unidades. A pesquisa é
+                    totalmente anônima, e seu objetivo é dar voz ao colaborador. Para que ele possa expor suas opiniões
+                    de forma individual, bem como sugerir melhorias dentro da organização.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section class="sobre_nos" id="dor">
+    <section class="sobre_nos1 dor" id="dor">
         <div class="main">
             <div class="contentsobre">
-                <h2>Deveres, Obrigações e Responsabilidades</h2>                
-                    <p class="p_ttx">
-                        • Apresentar-se no local de trabalho devidamente uniformizado em condições bem apresentáveis. <br>
-                        • Quando for retirar o novo uniforme o colaborador deverá devolver o uniforme antigo.<br>
-                        • O colaborador precisa devolver os uniformes quando se desligar da empresa.<br>
-                        • O colaborador deverá registrar diariamente o cartão ponto corretamente no horário de entrada na empresa, nos intervalos para almoço e na saída, conforme o turno em que o colaborador estiver trabalhando, caso não ocorra às batidas comunique seu superior, do contrário o sistema automaticamente descontará as horas.<br>
-                        • Após ter efetuado sua marcação do ponto, no início do seu expediente do dia, o colaborador não poderá deixar as dependências da empresa, sem autorização do seu superior imediato.<br>
-                        • Objetos pessoais devem ser deixados no armário disponibilizado pela empresa
-                        (celular, adornos, carteira e etc.).<br>
-                        • Quando surgir serviços ou emergências, o colaborador deverá se apresentar na empresa, devidamente uniformizado.<br>
-                        • Todos os serviços fora do horário de expediente deverão ser autorizados pelo seu superior, para que a empresa possa remunerar as horas extras;<br>
-                        • Para faltas justiﬁcadas o colaborador deverá no prazo máximo de 24 horas entregar documento de comprovação por escrito através de atestado médico ou alguns casos dos tipos de licença (maternidade, paternidade, casamento, falecimento, doação de sangue) ao seu setor de Recursos Humanos.<br>
-                        • Falta não justiﬁcável, neste caso serão descontadas as horas de ausência e mais o descanso semanal remunerado (domingo), bem como aplicado penalidades disciplinares.<br>
-                        • Manter o setor de Recursos Humanos atualizado sobre informações de caráter individual (documentos atualizados, cursos, dependentes, estado civil, endereço, número de telefone de contato etc...).<br>
-                        • Atender todos os meios de comunicações de maneira gentil, tanto as internas quanto as externas.<br>
-                        • Retornar os recados, mensagens instantâneas e e-mails recebidos de clientes externos e internos, logo que seja possível.<br>
-                        • O uso da internet será monitorado e será avaliado pelo setor de TI, e os sites abertos serão liberados conforme a necessidade de cada função.<br>
-                        • Usar material da empresa para ﬁns particulares somente com autorização expressa da gerência.<br>
-                        • Listas de arrecadações e ou abaixo assinados poderão circular na empresa somente com autorização da gerência.<br>
-                        • Evitar desperdício de tempo com assuntos alheios ao serviço com colegas ou estranhos.<br>
-                        • Manter bom relacionamento, cortesia e respeito com coordenadores, colegas, fornecedores, clientes e todas as pessoas que tratam com a empresa.<br>
-                        • Promover a existência de inter-relacionamento cooperativo e harmonioso em função dos serviços estipulado pelo superior.
-                        • Colaborar com o colega de trabalho, para melhor execução das tarefas a ele conﬁadas.<br>
-                        • Estar ciente de que a política da empresa é trabalho em equipe.<br>
-                        • Comunicar ao superior imediato qualquer irregularidade que tiver conhecimento em sua função.<br>
-                        • municar ao superior imediato qualquer irregularidade que tiver conhecimento em sua função.<br>
-                         Utilizar os veículos da empresa somente para serviços com autorização da empresa. Ciente de que é terminantemente PROIBIDO DAR CARONA.<br>
-                        • municar ao superior imediato qualquer irregularidade que tiver conhecimento em sua função.<br>
-                         municar ao superior imediato qualquer irregularidade que tiver conhecimento em sua função.<br>
-                         Ao utilizar dos veículos da empresa o motorista é o responsável pela segurança de todos os ocupantes do veículo. Portanto, o motorista deve cumprir a legislação de trânsito.<br>
-                        • É de responsabilidade de o condutor estar portando seus documentos pessoais (CNH).<br>
-                        • Manter organizado e limpo o seu setor e demais dependência da empresa.<br>
-                        • Zelar pela economia e conservação dos materiais e equipamentos que lhe forem conﬁados.<br>                     
-                        </p>      
-            </div>     
-         </div>
+                <h2>Deveres, Obrigações e Responsabilidades</h2>
+                <p class="p_ttx">
+                    • Apresentar-se no local de trabalho devidamente uniformizado em condições bem apresentáveis. <br>
+                    • Quando for retirar o novo uniforme o colaborador deverá devolver o uniforme antigo.<br>
+                    • O colaborador precisa devolver os uniformes quando se desligar da empresa.<br>
+                    • O colaborador deverá registrar diariamente o cartão ponto corretamente no horário de entrada na
+                    empresa, nos intervalos para almoço e na saída, conforme o turno em que o colaborador estiver
+                    trabalhando, caso não ocorra às batidas comunique seu superior, do contrário o sistema
+                    automaticamente descontará as horas.<br>
+                    • Após ter efetuado sua marcação do ponto, no início do seu expediente do dia, o colaborador não
+                    poderá deixar as dependências da empresa, sem autorização do seu superior imediato.<br>
+                    • Objetos pessoais devem ser deixados no armário disponibilizado pela empresa
+                    (celular, adornos, carteira e etc.).<br>
+                    • Quando surgir serviços ou emergências, o colaborador deverá se apresentar na empresa, devidamente
+                    uniformizado.<br>
+                    • Todos os serviços fora do horário de expediente deverão ser autorizados pelo seu superior, para
+                    que a empresa possa remunerar as horas extras;<br>
+                    • Para faltas justiﬁcadas o colaborador deverá no prazo máximo de 24 horas entregar documento de
+                    comprovação por escrito através de atestado médico ou alguns casos dos tipos de licença
+                    (maternidade, paternidade, casamento, falecimento, doação de sangue) ao seu setor de Recursos
+                    Humanos.<br>
+                    • Falta não justiﬁcável, neste caso serão descontadas as horas de ausência e mais o descanso semanal
+                    remunerado (domingo), bem como aplicado penalidades disciplinares.<br>
+                    • Manter o setor de Recursos Humanos atualizado sobre informações de caráter individual (documentos
+                    atualizados, cursos, dependentes, estado civil, endereço, número de telefone de contato etc...).<br>
+                    • Atender todos os meios de comunicações de maneira gentil, tanto as internas quanto as
+                    externas.<br>
+                    • Retornar os recados, mensagens instantâneas e e-mails recebidos de clientes externos e internos,
+                    logo que seja possível.<br>
+                    • O uso da internet será monitorado e será avaliado pelo setor de TI, e os sites abertos serão
+                    liberados conforme a necessidade de cada função.<br>
+                    • Usar material da empresa para ﬁns particulares somente com autorização expressa da gerência.<br>
+                    • Listas de arrecadações e ou abaixo assinados poderão circular na empresa somente com autorização
+                    da gerência.<br>
+                    • Evitar desperdício de tempo com assuntos alheios ao serviço com colegas ou estranhos.<br>
+                    • Manter bom relacionamento, cortesia e respeito com coordenadores, colegas, fornecedores, clientes
+                    e todas as pessoas que tratam com a empresa.<br>
+                    • Promover a existência de inter-relacionamento cooperativo e harmonioso em função dos serviços
+                    estipulado pelo superior.
+                    • Colaborar com o colega de trabalho, para melhor execução das tarefas a ele conﬁadas.<br>
+                    • Estar ciente de que a política da empresa é trabalho em equipe.<br>
+                    • Comunicar ao superior imediato qualquer irregularidade que tiver conhecimento em sua função.<br>
+                    • municar ao superior imediato qualquer irregularidade que tiver conhecimento em sua função.<br>
+                    Utilizar os veículos da empresa somente para serviços com autorização da empresa. Ciente de que é
+                    terminantemente PROIBIDO DAR CARONA.<br>
+                    • municar ao superior imediato qualquer irregularidade que tiver conhecimento em sua função.<br>
+                    municar ao superior imediato qualquer irregularidade que tiver conhecimento em sua função.<br>
+                    Ao utilizar dos veículos da empresa o motorista é o responsável pela segurança de todos os ocupantes
+                    do veículo. Portanto, o motorista deve cumprir a legislação de trânsito.<br>
+                    • É de responsabilidade de o condutor estar portando seus documentos pessoais (CNH).<br>
+                    • Manter organizado e limpo o seu setor e demais dependência da empresa.<br>
+                    • Zelar pela economia e conservação dos materiais e equipamentos que lhe forem conﬁados.<br>
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section class="sobre_nos" id="segtra">
+    <section class="sobre_nos segtra" id="segtra">
         <div class="main">
             <div class="contentsobre">
-                <h2>Procedimentos de Segurança</h2>                
-                    <p class="p_ttx">
-                        A empresa busca a melhoria contínua na segurança dos colaboradores, entretanto as normas de segurança só poderão dar os resultados esperados, com a participação do colaborador, o mesmo deverá pensar em sua segurança e na de seus colegas.           
-                        </p>   
-                        
-                    <p class="p_ttx">
-                        • A prevenção de acidentes do trabalho não depende somente dos proﬁssionais da área de segurança, das normas e EPIs, mas principalmente da atitude dos colaboradores. <br>
-                        • O colaborador deve ter seriedade no cumprimento das normas, evitar brincadeiras inoportunas em horário de expediente.<br>
-                        • Serão promovidos pela empresa, todas as orientações e treinamentos sobre o devido uso dos equipamentos fornecidos, garantindo assim, a devida proteção e a segurança do colaborador.<br>
-                        • O colaborador deve respeitar as orientações e ﬁscalizações dos colegas cipeiros.<br>
-                        • Utilizar de modo correto, todos os EPIs e EPCs necessários para cada área de trabalho e para cada tarefa.<br>
-                        • Antes de iniciar qualquer atividade, observe se as máquinas e ou equipamentos estejam em condições de operação, caso contrário, comunique imediatamente qualquer irregularidade ao seu superior e ou setor de segurança.<br>
-                        • Dentro da indústria é obrigatório o uso diário do equipamento de proteção individual conforme indicados pela empresa.<br>
-                        • O colaborador não deve utilizar equipamento defeituoso, por isso, no caso de perda ou qualquer dano que prejudique o bom funcionamento do equipamento, o colaborador
-                        deve comunicar imediatamente ao seu superior e ou setor de segurança.<br>
-                        • Tenha o máximo de atenção ao operar equipamentos ou objetos cortantes, se for o caso.<br>
-                        • Tendo alguma dúvida sobre qualquer procedimento referente à sua seção de
-                        trabalho, esclareça sempre com o seu superior e ou setor de segurança antes de tomar tomar qualquer decisão.<br>
-                        • Não correr nas escadas e corredores.<br>
-                        • Qualquer incidente ou acidente no trabalho deverá ser comunicado ao seu superior imediato e ao setor de segurança.<br>
-                        • Qualquer acidente que vir ocorrer no trajeto de casa para o trabalho e ou do trabalho para a casa o colaborador deverá apresentar o boletim de ocorrência ao setor segurança.<br>
+                <h2>Procedimentos de Segurança</h2>
+                <p class="p_ttx">
+                    A empresa busca a melhoria contínua na segurança dos colaboradores, entretanto as normas de
+                    segurança só poderão dar os resultados esperados, com a participação do colaborador, o mesmo deverá
+                    pensar em sua segurança e na de seus colegas.
+                </p>
 
-                    </p>
-            </div>     
-         </div>
+                <p class="p_ttx">
+                    • A prevenção de acidentes do trabalho não depende somente dos proﬁssionais da área de segurança,
+                    das normas e EPIs, mas principalmente da atitude dos colaboradores. <br>
+                    • O colaborador deve ter seriedade no cumprimento das normas, evitar brincadeiras inoportunas em
+                    horário de expediente.<br>
+                    • Serão promovidos pela empresa, todas as orientações e treinamentos sobre o devido uso dos
+                    equipamentos fornecidos, garantindo assim, a devida proteção e a segurança do colaborador.<br>
+                    • O colaborador deve respeitar as orientações e ﬁscalizações dos colegas cipeiros.<br>
+                    • Utilizar de modo correto, todos os EPIs e EPCs necessários para cada área de trabalho e para cada
+                    tarefa.<br>
+                    • Antes de iniciar qualquer atividade, observe se as máquinas e ou equipamentos estejam em condições
+                    de operação, caso contrário, comunique imediatamente qualquer irregularidade ao seu superior e ou
+                    setor de segurança.<br>
+                    • Dentro da indústria é obrigatório o uso diário do equipamento de proteção individual conforme
+                    indicados pela empresa.<br>
+                    • O colaborador não deve utilizar equipamento defeituoso, por isso, no caso de perda ou qualquer
+                    dano que prejudique o bom funcionamento do equipamento, o colaborador
+                    deve comunicar imediatamente ao seu superior e ou setor de segurança.<br>
+                    • Tenha o máximo de atenção ao operar equipamentos ou objetos cortantes, se for o caso.<br>
+                    • Tendo alguma dúvida sobre qualquer procedimento referente à sua seção de
+                    trabalho, esclareça sempre com o seu superior e ou setor de segurança antes de tomar tomar qualquer
+                    decisão.<br>
+                    • Não correr nas escadas e corredores.<br>
+                    • Qualquer incidente ou acidente no trabalho deverá ser comunicado ao seu superior imediato e ao
+                    setor de segurança.<br>
+                    • Qualquer acidente que vir ocorrer no trajeto de casa para o trabalho e ou do trabalho para a casa
+                    o colaborador deverá apresentar o boletim de ocorrência ao setor segurança.<br>
+
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section class="sobre_nos" id="od">
+    <section class="sobre_nos1 od" id="od">
         <div class="main">
             <div class="contentsobre">
-                <h2>Ocorrência Disciplinar</h2>                
-                    <p class="p_ttx">
-                        As normas, os deveres, as responsabilidades, quando cumpridas, favorecem o bom desenvolvimento seu e da empresa. No momento em que praticar atos que relevem desrespeito as regras constantes deste Manual, bem como a legislação trabalhista, você estará sujeito as respectivas penas disciplinares.          
-                        </p>   
-                        
-                 <h3>PENALIDADES</h3>
-                    <p class="p_ttx">
-                        • Advertência Escrita – O colaborador recebe advertência. <br>
+                <h2>Ocorrência Disciplinar</h2>
+                <p class="p_ttx">
+                    As normas, os deveres, as responsabilidades, quando cumpridas, favorecem o bom desenvolvimento seu e
+                    da empresa. No momento em que praticar atos que relevem desrespeito as regras constantes deste
+                    Manual, bem como a legislação trabalhista, você estará sujeito as respectivas penas disciplinares.
+                </p>
 
-                        • 1º Suspensão – No caso de reincidência de fatos ligados direta ou indiretamente com aquele que originou advertência, será aplicado suspensão de 1 dia.<br>
+                <h3>PENALIDADES</h3>
+                <p class="p_ttx">
+                    • Advertência Escrita – O colaborador recebe advertência. <br>
 
-                        • 2° Suspensão - No caso de reincidência de fatos ligados direta ou indiretamente com aquele que originou a 1° suspensão, será aplicada a suspensão de 2 dias.<br>
+                    • 1º Suspensão – No caso de reincidência de fatos ligados direta ou indiretamente com aquele que
+                    originou advertência, será aplicado suspensão de 1 dia.<br>
 
-                        • 3° Suspensão – No caso de reincidência de fatos ligados direta ou indiretamente com aquele que originou a 2° suspensão, será aplicada a suspensão de 3 dias.<br>
+                    • 2° Suspensão - No caso de reincidência de fatos ligados direta ou indiretamente com aquele que
+                    originou a 1° suspensão, será aplicada a suspensão de 2 dias.<br>
 
-                        • Rescisão por justa causa – Caso o colaborador reincida no erro, após as suspensões, este poderá ser demitido por Justa Causa conforme artigo 482 CLT.<br>
-                        • Dependendo da gravidade do ato praticado pelo funcionário, o mesmo poderá ser demitido por justa causa, ainda que não tenha ocorrido etapas anteriores.<br>
+                    • 3° Suspensão – No caso de reincidência de fatos ligados direta ou indiretamente com aquele que
+                    originou a 2° suspensão, será aplicada a suspensão de 3 dias.<br>
 
-                        • As penalidades previstas poderão ser aplicadas independentemente dessa ordem de indicação, segundo a gravidade e a reincidência da falta cometida.<br>
-                        • No caso das suspensões, ocorrerá o desconto de repouso remunerado do salário do funcionário.<br>
-                    </p>
-            </div>     
-         </div>
+                    • Rescisão por justa causa – Caso o colaborador reincida no erro, após as suspensões, este poderá
+                    ser demitido por Justa Causa conforme artigo 482 CLT.<br>
+                    • Dependendo da gravidade do ato praticado pelo funcionário, o mesmo poderá ser demitido por justa
+                    causa, ainda que não tenha ocorrido etapas anteriores.<br>
+
+                    • As penalidades previstas poderão ser aplicadas independentemente dessa ordem de indicação, segundo
+                    a gravidade e a reincidência da falta cometida.<br>
+                    • No caso das suspensões, ocorrerá o desconto de repouso remunerado do salário do funcionário.<br>
+                </p>
+            </div>
+        </div>
     </section>
 
     <section class="sobre_nos" id="beneficios">
         <div class="main">
             <div class="contentsobre">
-                <h2> Benefícios</h2>                
-                        
-                 <h3>FÉRIAS</h3>
-                    <p class="p_ttx">
-                        O colaborador tem direito a férias após 12 meses de trabalho na empresa, tendo esta mais 11 meses para conceder-lhes as férias.
-                        As faltas injustiﬁcadas durante o período aquisitivo de férias serão descontadas nas mesmas,
-                        conforme: <br>
-                        • Até 05 faltas - 30 dias de férias.<br>
-                        • De 06 a 14 faltas - 24 dias de férias.<br>
-                        • De 15 a 23 faltas - 18 dias de férias.<br>
-                        • De 24 a 32 faltas - 12 dias de férias.<br>
-                        • Acima de 32 faltas, não tem direito a férias.<br>
-                    </p>
+                <h2> Benefícios</h2>
 
-                    <h3>LICENÇAS</h3>
-                    <p class="p_ttx">
-                        • Maternidade: 120 dias a partir do atestado medico. <br>
-                        • Paternidade: 05 dias consecutivos a partir do nascimento do ﬁlho.<br> 
-                        • Casamento: 03 dias consecutivos úteis.<br>
-                        • Falecimento: 02 dias consecutivos no falecimento de pai, mãe, irmão, ﬁlhos e cônjuge.<br>
-                        • Doação de Sangue: 01 dia a cada 12 meses.<br>
-                        • Auxílio acidente e doença: A empresa pagará o colaborador de acordo com a legislação vigente.<br>
-                    </p>
+                <h3>FÉRIAS</h3>
+                <p class="p_ttx">
+                    O colaborador tem direito a férias após 12 meses de trabalho na empresa, tendo esta mais 11 meses
+                    para conceder-lhes as férias.
+                    As faltas injustiﬁcadas durante o período aquisitivo de férias serão descontadas nas mesmas,
+                    conforme: <br>
+                    • Até 05 faltas - 30 dias de férias.<br>
+                    • De 06 a 14 faltas - 24 dias de férias.<br>
+                    • De 15 a 23 faltas - 18 dias de férias.<br>
+                    • De 24 a 32 faltas - 12 dias de férias.<br>
+                    • Acima de 32 faltas, não tem direito a férias.<br>
+                </p>
 
-                    <h3>Principios Éticos</h3>
-                    <p class="p_ttx">
-                        • Valorizar o bem comum, das pessoas e do interesse público. <br>
-                        • Cumprir todas as leis e normas aplicáveis às normas do setor.<br>
-                        • Preservar a legalidade, a honestidade, a justiça, a impessoalidade, a transparência, a valorização e incentivo ao diálogo, o espírito de compreensão, a veracidade e a prestação de contas.<br>
-                        • Evitar situações em que os interesses pessoais possam entrar em conﬂito com os interesses da empresa.<br>
-                        • Preservar a integridade pessoal e proﬁssional do público interno e externo.<br>
-                        • Ter tolerância para com as divergências, desde que respeitados os direitos individuos coletivos.<br>
-                        • Preservar a imagem e o patrimônio material e intelectual da empresa.<br>   
-                    </p>
+                <h3>LICENÇAS</h3>
+                <p class="p_ttx">
+                    • Maternidade: 120 dias a partir do atestado medico. <br>
+                    • Paternidade: 05 dias consecutivos a partir do nascimento do ﬁlho.<br>
+                    • Casamento: 03 dias consecutivos úteis.<br>
+                    • Falecimento: 02 dias consecutivos no falecimento de pai, mãe, irmão, ﬁlhos e cônjuge.<br>
+                    • Doação de Sangue: 01 dia a cada 12 meses.<br>
+                    • Auxílio acidente e doença: A empresa pagará o colaborador de acordo com a legislação vigente.<br>
+                </p>
 
-                    <h3>CÓDIGO DE ÉTICA E CONDUTA</h3>
-                    <p class="p_ttx">
-                        • Ler, compreender, cumprir e fazer cumprir este informativo. <br>
-                        • Exercer as atividades proﬁssionais com competência, transparência e respeito, oferecendo sugestões que melhorem a qualidade dos processos, produtos e serviços da empresa e preservem o seu patrimônio, imagem e interesses, responsabilizando-se pelo seu trabalho, exatidão das informações prestadas, pareceres e opiniões.<br>
-                        • Buscar manter-se em permanente atualização técnica e proﬁssional, contribuindo para que tal conduta seja adotada por todos.<br>
-                        • Agir de forma honesta, justa, com disponibilidade e atenção a todas as pessoas com as quais se relacionam em nome da empresa, respeitando diferenças individuais.<br>
-                        • Portar-se com transparência e igualdade, independente do cargo que atua.<br>
-                        • Não praticar e não tolerar discriminação de pessoas por cor/raça, etnia, sexo, idade, origem regional, condição econômica/social, física ou mental, orientação política, religiosa
-                        ou sexual ou por qualquer outra condição.<br>
-                           
-                    </p>
-            </div>     
-         </div>
+                <h3>Principios Éticos</h3>
+                <p class="p_ttx">
+                    • Valorizar o bem comum, das pessoas e do interesse público. <br>
+                    • Cumprir todas as leis e normas aplicáveis às normas do setor.<br>
+                    • Preservar a legalidade, a honestidade, a justiça, a impessoalidade, a transparência, a valorização
+                    e incentivo ao diálogo, o espírito de compreensão, a veracidade e a prestação de contas.<br>
+                    • Evitar situações em que os interesses pessoais possam entrar em conﬂito com os interesses da
+                    empresa.<br>
+                    • Preservar a integridade pessoal e proﬁssional do público interno e externo.<br>
+                    • Ter tolerância para com as divergências, desde que respeitados os direitos individuos
+                    coletivos.<br>
+                    • Preservar a imagem e o patrimônio material e intelectual da empresa.<br>
+                </p>
+
+                <h3>CÓDIGO DE ÉTICA E CONDUTA</h3>
+                <p class="p_ttx">
+                    • Ler, compreender, cumprir e fazer cumprir este informativo. <br>
+                    • Exercer as atividades proﬁssionais com competência, transparência e respeito, oferecendo sugestões
+                    que melhorem a qualidade dos processos, produtos e serviços da empresa e preservem o seu patrimônio,
+                    imagem e interesses, responsabilizando-se pelo seu trabalho, exatidão das informações prestadas,
+                    pareceres e opiniões.<br>
+                    • Buscar manter-se em permanente atualização técnica e proﬁssional, contribuindo para que tal
+                    conduta seja adotada por todos.<br>
+                    • Agir de forma honesta, justa, com disponibilidade e atenção a todas as pessoas com as quais se
+                    relacionam em nome da empresa, respeitando diferenças individuais.<br>
+                    • Portar-se com transparência e igualdade, independente do cargo que atua.<br>
+                    • Não praticar e não tolerar discriminação de pessoas por cor/raça, etnia, sexo, idade, origem
+                    regional, condição econômica/social, física ou mental, orientação política, religiosa
+                    ou sexual ou por qualquer outra condição.<br>
+
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section class="sobre_nos" id="canald">
+    <section class="sobre_nos1" id="canald">
         <div class="main">
             <div class="contentsobre">
-                <h2>Canal de denúncia</h2>                
-                        
-                 <h3>Assédio sexual e moral contra a mulher</h3>
-                    <p class="p_ttx">
-                        O assédio sexual e outras formas de violência no ambiente de trabalho são proibidos e qualquer comportamento dessa natureza será tratado rigorosamente e com seriedade, conforme previsão da Lei 10.224/2001 (Código Penal) e Lei 14.457/2022 (Programa Emprega Mais Mulheres).
-                        Os colaboradores que presenciarem ou sofrerem qualquer tipo de violência ou assédio na sede da empresa ou em razão da função que desempenham, devem relatar o ocorrido pelo canal de denúncia da empresa <a style="color: #0361cd;" href="http://apps.teixeiratextil.com.br:8780/" target="_blank">www.teixeiratextil.com.br/denuncia</a>.
+                <h2>Canal de denúncia</h2>
 
-                    </p>
+                <h3>Assédio sexual e moral contra a mulher</h3>
+                <p class="p_ttx">
+                    O assédio sexual e outras formas de violência no ambiente de trabalho são proibidos e qualquer
+                    comportamento dessa natureza será tratado rigorosamente e com seriedade, conforme previsão da Lei
+                    10.224/2001 (Código Penal) e Lei 14.457/2022 (Programa Emprega Mais Mulheres).
+                    Os colaboradores que presenciarem ou sofrerem qualquer tipo de violência ou assédio na sede da
+                    empresa ou em razão da função que desempenham, devem relatar o ocorrido pelo canal de denúncia da
+                    empresa <a style="color: #0361cd;" href="http://apps.teixeiratextil.com.br:8780/"
+                        target="_blank">www.teixeiratextil.com.br/denuncia</a>.
 
-                    <h3>O procedimento de apuração de notícia de assédio sexual e de violência tem premissas específicas: </h3>
-                    <p class="p_ttx">
-                        • É adotado por provocação da vítima ou por quem apresente a denúncia; <br>
-                        • É imediato; <br>
-                        • É confidencial; <br>
-                        • É dinâmico; <br>
-                        • Permite a assistência, a orientação e o acompanhamento dos envolvidos;<br>
-                        • Permite a juntada de documentos;<br>
-                        • Contempla a conciliação dos conflitos em todas as fases do procedimento.<br>
-                    </p>
+                </p>
 
-                    <h3>Findo o procedimento e não sendo possível ajustar e/ou conciliar, a denúncia de assédio e/ou violência compreenderá as etapas de:</h3>
-                    <p class="p_ttx">
-                        • Recebimento da denúncia por meio do portal de denúncia; <br>
+                <h3>O procedimento de apuração de notícia de assédio sexual e de violência tem premissas específicas:
+                </h3>
+                <p class="p_ttx">
+                    • É adotado por provocação da vítima ou por quem apresente a denúncia; <br>
+                    • É imediato; <br>
+                    • É confidencial; <br>
+                    • É dinâmico; <br>
+                    • Permite a assistência, a orientação e o acompanhamento dos envolvidos;<br>
+                    • Permite a juntada de documentos;<br>
+                    • Contempla a conciliação dos conflitos em todas as fases do procedimento.<br>
+                </p>
 
-                        • Apuração e investigação dos fatos, será realizado pela Comissão de investigação; <br>
-                        
-                        • Coleta de provas e evidências sobre a situação relatada; <br>
-                        
-                        • Avaliação das evidências e provas;<br>
-                        
-                        • Envio do parecer final sobre a denúncia para a direção da empresa; <br>
-                        
-                        • Retorno ao denunciante e/ou envolvidos e:<br>
-                        
-                        • Aplicação das medidas disciplinares apropriadas caso seja constado o assédio;<br>
-                        
-                        • Caso não seja constado, a empresa tomará as medidas adicionais para garantir que o ambiente de trabalho seguro seja mantido. <br>
-                        
-                        • A depender da gravidade dos fatos, é possível a rescisão contratual por justa causa daquele que deu causa a abertura da denúncia, sem prejuízo das sanções criminais cabíveis.<br>
-                        
-                    </p>
-            </div>     
-         </div>
+                <h3>Findo o procedimento e não sendo possível ajustar e/ou conciliar, a denúncia de assédio e/ou
+                    violência compreenderá as etapas de:</h3>
+                <p class="p_ttx">
+                    • Recebimento da denúncia por meio do portal de denúncia; <br>
+
+                    • Apuração e investigação dos fatos, será realizado pela Comissão de investigação; <br>
+
+                    • Coleta de provas e evidências sobre a situação relatada; <br>
+
+                    • Avaliação das evidências e provas;<br>
+
+                    • Envio do parecer final sobre a denúncia para a direção da empresa; <br>
+
+                    • Retorno ao denunciante e/ou envolvidos e:<br>
+
+                    • Aplicação das medidas disciplinares apropriadas caso seja constado o assédio;<br>
+
+                    • Caso não seja constado, a empresa tomará as medidas adicionais para garantir que o ambiente de
+                    trabalho seguro seja mantido. <br>
+
+                    • A depender da gravidade dos fatos, é possível a rescisão contratual por justa causa daquele que
+                    deu causa a abertura da denúncia, sem prejuízo das sanções criminais cabíveis.<br>
+
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section class="sobre_nos" id="cf">
+    <section class="sobre_nos cf" id="cf">
         <div class="main">
             <div class="contentsobre">
-                <h2>Considerações ﬁnais</h2>                
-                        
-                    <p class="p_ttx">
-                        O Manual de Conduta e Integração, servirá para obter dos colaboradores, um trabalho de qualidade e produtividade, bem como um ambiente saudável para todos na TEIXEIRA TÊXTIL. A partir de agora você passa a ser participante do quadro de colaboradores, fazendo parte desta família que abre suas portas, acolhendo-o como novo parceiro.  Esperamos que sua adaptação no trabalho seja alcançada com muito sucesso pessoal e profissional.
-                        O seu progresso e sucesso dependerão da sua dedicação, lealdade, responsabilidade, eficiência, comprometimento e do entusiasmo dedicado ao seu trabalho.
-                        Procure encontrar satisfação no que faz e conhecer o máximo da sua profissão a fim de estar apto quando a empresa necessitar de seus ser viços em diversas atividades. Busque sempre conhecimentos com intuito de ajudar em seu crescimento e da empresa.  Conquiste novas amizades e a admiração de todos.
-                        Esperamos que você seja feliz.
-                    </p>
-            </div>     
-         </div>
+                <h2>Considerações ﬁnais</h2>
+
+                <p class="p_ttx">
+                    O Manual de Conduta e Integração, servirá para obter dos colaboradores, um trabalho de qualidade e
+                    produtividade, bem como um ambiente saudável para todos na TEIXEIRA TÊXTIL. A partir de agora você
+                    passa a ser participante do quadro de colaboradores, fazendo parte desta família que abre suas
+                    portas, acolhendo-o como novo parceiro. Esperamos que sua adaptação no trabalho seja alcançada com
+                    muito sucesso pessoal e profissional.
+                    O seu progresso e sucesso dependerão da sua dedicação, lealdade, responsabilidade, eficiência,
+                    comprometimento e do entusiasmo dedicado ao seu trabalho.
+                    Procure encontrar satisfação no que faz e conhecer o máximo da sua profissão a fim de estar apto
+                    quando a empresa necessitar de seus ser viços em diversas atividades. Busque sempre conhecimentos
+                    com intuito de ajudar em seu crescimento e da empresa. Conquiste novas amizades e a admiração de
+                    todos.
+                    Esperamos que você seja feliz.
+                </p>
+            </div>
+        </div>
     </section>
 
+    <section class="sobre_nos2" id="ttx">
+        <div class="main">
+            <div class="contentsobre">
+                <h2>Teixeira têxtil</h2>
+                <h2>soluções que embalam resultados</h2>
+                <p class="p_sn">
+                    Há mais de 20 anos a solução mais inteligente e sustentável para o armazenamento e transporte de
+                    produtos dos mais diversos segmentos da indústria
+                </p>
+            </div>
+            <div class="videoi">
+                <iframe class="videoinicio" src="https://www.youtube.com/embed/2bKXfr5Bpkg" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen=""></iframe>
+            </div>
+
+        </div>
+    </section>
 
     <section class="conteiner_teixeirinha" id="ct">
         <div class="main">
             <div class="contentsobre">
-                <h2>SEJA BEM VINDO A FAMILIA TEIXEIRA TÊXTIL!</h2>                
-                    
+                <h2>SEJA BEM VINDO A FAMILIA TEIXEIRA TÊXTIL!</h2>
+
                 <img src="img/teixeirinha.png" alt="">
-            </div>     
-         </div>
+            </div>
+        </div>
     </section>
 
     <section class="contatos" id="contatos">
         <h3>Contatos</h3>
         <div class="contatos_secao">
-            
+
             <div>
                 <i class="bi bi-telephone"><a href=""></a></i>
                 <span>+55 (48) 99999-9999</span>
             </div>
 
             <div>
-             <a href="https://www.instagram.com/teixeiraindustria/" target="_blank"><i class="bi bi-instagram"></i>
-                <span>@teixeiraindustria</span>
-            </a>   
-                
+                <a href="https://www.instagram.com/teixeiraindustria/" target="_blank"><i class="bi bi-instagram"></i>
+                    <span>@teixeiraindustria</span>
+                </a>
+
             </div>
 
             <div>
-                <a href="https://www.facebook.com/teixeiraindustria/?locale=pt_BR" target="_blank"><i class="bi bi-facebook"></i>
-                <span>Teixeira Têxtil</span>
-            </a>
+                <a href="https://www.facebook.com/teixeiraindustria/?locale=pt_BR" target="_blank"><i
+                        class="bi bi-facebook"></i>
+                    <span>Teixeira Têxtil</span>
+                </a>
             </div>
 
             <div>
-                <a href="https://www.linkedin.com/company/teixeiratextil?originalSubdomain=br" target="_blank"><i class="bi bi-linkedin"></i>
-                <span>Teixeira Têxtil</span>
-            </a>
+                <a href="https://www.linkedin.com/company/teixeiratextil?originalSubdomain=br" target="_blank"><i
+                        class="bi bi-linkedin"></i>
+                    <span>Teixeira Têxtil</span>
+                </a>
             </div>
-            
+
             <div>
-                <a href="https://www.google.com/maps/place/Teixeira+T%C3%AAxtil+-+Big+Bags+e+Sacarias+de+R%C3%A1fia/@-28.7544043,-49.4911262,15z/data=!4m6!3m5!1s0x952185d246dd1169:0xb179bf79f62f9797!8m2!3d-28.7544043!4d-49.4911262!16s%2Fg%2F11c54dcmjn?entry=ttu" target="_blank"><i class="bi bi-geo-alt-fill"></i>
-                <span>Rua Ignes Tiscoski Herdt , <br>
-                    150 Santa Isabel - 88850-000 <br>
-                     Forquilhinha - SC </span>
-                    </a>
+                <a href="https://www.google.com/maps/place/Teixeira+T%C3%AAxtil+-+Big+Bags+e+Sacarias+de+R%C3%A1fia/@-28.7544043,-49.4911262,15z/data=!4m6!3m5!1s0x952185d246dd1169:0xb179bf79f62f9797!8m2!3d-28.7544043!4d-49.4911262!16s%2Fg%2F11c54dcmjn?entry=ttu"
+                    target="_blank"><i class="bi bi-geo-alt-fill"></i>
+                    <span>Rua Ignes Tiscoski Herdt , <br>
+                        150 Santa Isabel - 88850-000 <br>
+                        Forquilhinha - SC </span>
+                </a>
             </div>
         </div>
-    
-    
+
+
     </section>
 
     <footer>
         <h4>Desenvolvido por Victor Antonio</h4>
     </footer>
 
-    <script src="script/script.js"></script>
+
 </body>
+
 </html>

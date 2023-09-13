@@ -219,7 +219,7 @@ a.button:active {
 
 .first_section{
     width: 100vw;
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255, 0.5)) ,url(../img/fundo_teixeira.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255, 0.5)) ,url(/img/fundo_teixeira.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -239,8 +239,7 @@ a.button:active {
 }
 
 .first_section h1{
-    color: #0361cd;
-    border-bottom: 0.3rem solid #75cafe;
+    color: #0091ca;
     font-size: 6rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -270,15 +269,79 @@ a.button:active {
 }
 
 .btn button:hover{
-    border: 3px solid #75cafe;
+    border: 3px solid #0361cd;
     background-color: transparent;
     color: #0361cd;
 }
 
+/* navegation */
+
+.navegation {
+    max-width: 1500px;
+    min-width: 300px;
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.navegation ul {
+    display: flex;
+    align-items: center;
+}
+
+.navegation .btn-navegation {
+    width: 15rem;
+    height: 90px; 
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #0091ca;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 700;
+    transition: all 200ms ease-in;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.navegation .btn-navegation div {
+    text-align: center;
+}
+
+.navegation .btn-navegation i {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.navegation .btn-navegation:hover {
+    border: 3px solid #0361cd;
+    background-color: transparent;
+    color: #0361cd;
+}
+
+
+
 /* Sobre nós */
 
 .sobre_nos{
+    width: 100%;
+    padding-bottom: 2rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff;
+    display: none;
+}
+
+.sobre_nos1{
     width: 100%;
     padding-bottom: 2rem;
     color: black;
@@ -286,6 +349,17 @@ a.button:active {
     align-items: center;
     justify-content: center;
     background-color: #fafafa;
+    display: none;
+}
+
+.sobre_nos2{
+    width: 100%;
+    padding-bottom: 2rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
 }
 
 .sobre_nos .img_bag{
@@ -446,14 +520,13 @@ footer{
 }
 
 .conteiner_teixeirinha{
-    background-color: #ffffff;
     width: 100%;
     padding-bottom: 2rem;
     color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fafafa;
+    background-color: #ffffff;
 }
 
 .conteiner_teixeirinha .main{
@@ -465,6 +538,18 @@ footer{
 
 @media (max-width: 1225px) {
     
+    .navegation ul{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navegation ul{
+        justify-content: center;
+        align-items: center;
+    }
+
+
     .conteudo_principal h1 {
         width: 1000px;
         text-align: center;
@@ -865,6 +950,7 @@ footer{
 }
 
 @media (max-width: 665px) {
+
     .sobre_nos img {
         width: 600px;
         margin-left: 10px;
@@ -897,6 +983,18 @@ footer{
 }
 
 @media (max-width: 520px) {
+
+    .navegation ul{
+        width: 100%;
+        flex-wrap: wrap;
+        
+    }
+
+    .navegation ul{
+        justify-content: center;
+        align-items: center;
+    }
+
     
     .conteudo_principal h1 {
         width: 400px;
@@ -931,12 +1029,40 @@ footer{
 }
 
 @media (max-width: 420px) {
+
+
+    .navegation{
+
+        padding: 2rem 6rem; 
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navegation ul{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navegation .btn-navegation{
+        width: 30rem;
+    }
+
+
     .logo{
         width: auto;
      }
 }
 
 @media (max-width: 399px) {
+
+    .navegation ul{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navegation .btn-navegation{
+        width: 30rem;
+    }
 
     .conteudo_principal h1 {
        font-size: 4rem;
@@ -980,7 +1106,16 @@ footer{
     }
     
     @media (max-width: 365px) {
+        .navegation ul{
+            justify-content: center;
+            align-items: center;
+        }
     
+        .navegation ul{
+            display: flex;
+            flex-direction: column;
+        }
+
         .btn {
             width: auto;
             flex-direction: column;
